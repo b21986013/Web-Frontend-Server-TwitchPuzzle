@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Twitch-ChessPuzzle</title>
+
+    <!-- Include Jquery required for chess.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
+        crossorigin="anonymous">
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/chessboard-1.0.0.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <div class="grid-container">
+        
+        <div class="logo"> <img src="images/strategy.png" alt=""> </div>
+
+        <div class="brand"> <h1>PuzzleArena.org</h1> </div>
+    
+        <div class="chat">
+            <div>
+                                                                                                                                                    
+                <span class="quote">“When you see a good move, look for a better one”</span>
+                <br> 
+                <span class="author">(Emanuel Lasker)</span>
+                <br><br>
+                <span class="quote">“Nothing excites jaded Grandmasters more than a theoretical novelty”</span>
+                <br>  
+                <span class="author">(Dominic Lawson)</span>
+                <br><br>
+                <span class="quote">“We cannot resist the fascination of sacrifice, since a passion for
+                sacrifices is part of a Chessplayer’s nature”</span>
+                <br>
+                <span class="author">(Rudolf Spielman)</span>
+                 
+                 
+            </div>    
+            
+        </div>
+            
+        
+    
+        <div id="myBoard"></div>
+      
+        <div class="puzzle-statics">
+            
+            <label for="name-label">Nick:</label>
+            <input type="text" id="name-input" name="name-label" required minlength="4" maxlength="5" size="10">
+           
+            <label for="move-label">  move ("a2a4"):</label>
+            <input type="text" id="move-input" name="move-label" required minlength="4" maxlength="5" size="10">
+            <div id="rating-label"></div>
+        
+        </div>
+    
+        <div class="scoreboard">
+            <div class="title">Scoreboard</div>
+            <div class="rank-nick">
+                <div class="badge"></div>
+                <div class="rank">1 -</div>
+                <div class="nick">Tourist</div>
+            </div>
+            <div class="rank-nick">
+                <div class="badge"></div>
+                <div class="rank">1 -</div>
+                <div class="nick">Tourist</div>
+            </div>
+            <div class="rank-nick">
+                <div class="badge"></div>
+                <div class="rank">1 -</div>
+                <div class="nick">Tourist</div>
+            </div>
+            <div class="rank-nick">
+                <div class="badge"></div>
+                <div class="rank">1 -</div>
+                <div class="nick">Tourist</div>
+            </div>
+            <div class="rank-nick">
+                <div class="badge"></div>
+                <div class="rank">1 -</div>
+                <div class="nick">Tourist</div>
+            </div>
+            <div class="rank-nick">
+                <div class="badge"></div>
+                <div class="rank">1 -</div>
+                <div class="nick">Tourist</div>
+            </div>
+            <div class="rank-nick">
+                <div class="badge"></div>
+                <div class="rank">1 -</div>
+                <div class="nick">Tourist</div>
+            </div>
+            <div class="rank-nick">
+                <div class="badge"></div>
+                <div class="rank">1 -</div>
+                <div class="nick">Tourist</div>
+            </div>
+            <div class="rank-nick">
+                <div class="badge"></div>
+                <div class="rank">1 -</div>
+                <div class="nick">Tourist</div>
+            </div>
+            <div class="rank-nick">
+                <div class="badge"></div>
+                <div class="rank">1 -</div>
+                <div class="nick">Tourist</div>
+            </div>
+        </div>
+    </div> 
+    
+    
+
+    <script type="module" src="src/request.js"></script>
+    <script type="module" src="src/chessboard-1.0.0.min.js"></script>
+    <script type="module" src="src/app.js"></script>
+</body>
+</html>
